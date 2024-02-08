@@ -1,6 +1,6 @@
 local plugins = {
   {
-    "williambowman/mason.nvim",
+    "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
         "clangd",
@@ -32,7 +32,7 @@ local plugins = {
     "jay-babu/mason-nvim-dap.nvim",
     event = "VeryLazy",
     dependencies = {
-      "williambowman/mason.nvim",
+      "williamboman/mason.nvim",
       "mfussenegger/nvim-dap"
     },
     opts = {
