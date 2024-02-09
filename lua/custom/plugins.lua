@@ -7,10 +7,11 @@ local plugins = {
         "clang-format",
         "codelldb",
         "black",
-        "debugpy",
+        "debugpy@1.8.0",
         "mypy",
-        "ruff",
-        "pyright"
+        "ruff@0.2.0",
+        "pyright",
+        "lua-language-server"
       }
     }
   },
