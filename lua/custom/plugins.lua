@@ -6,7 +6,7 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
-        "black",
+        "black@24.1.1",
         "debugpy@1.8.0",
         "mypy",
         "ruff@0.2.0",
