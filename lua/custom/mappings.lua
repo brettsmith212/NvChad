@@ -10,7 +10,11 @@ M.dap = {
     ["<leader>dr"] = {
       "<cmd> DapContinue <CR>",
       "Start or continue the debugger",
-    }
+    },
+    ["<leader>dc"] = {
+      ':lua require"dapui".close()<CR>',
+      "Terminate debugger"
+    },
   }
 }
 
