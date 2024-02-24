@@ -59,7 +59,6 @@ local plugins = {
                 }
             }
 
-
             dap.configurations.cpp = {
                 {
                     name = "Debug with Arguments",
