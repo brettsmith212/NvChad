@@ -65,10 +65,11 @@ local plugins = {
                     name = "Debug with Arguments",
                     type = "codelldb",
                     request = "launch",
+                    -- program = '/path/to/task/file',
                     program = function()
                         return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
                     end,
-                    -- args = { "-l", "hello" },
+                    -- args = { "-l", "flags" },
                     args = function()
                         local args_string = vim.fn.input('Arguments: ')
                         return vim.split(args_string, " +")
