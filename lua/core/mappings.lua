@@ -9,7 +9,7 @@ M.general = {
     ["<C-e>"] = { "<End>", "End of line" },
 
     -- Exit Insert mode
-    ["jk"] = { "<ESC>", "Exit Insert Mode"},
+    ["jk"] = { "<ESC>", "Exit Insert Mode" },
 
     -- navigate within insert mode
     ["<C-h>"] = { "<Left>", "Move left" },
@@ -20,6 +20,10 @@ M.general = {
 
   n = {
     ["<Esc>"] = { "<cmd> noh <CR>", "Clear highlights" },
+
+    -- open diagnostics
+    ["<leader>i"] = { "<cmd> lua vim.diagnostic.open_float() <CR>", "Open LSP Diagnostics" },
+
     -- switch between windows
     ["<C-h>"] = { "<C-w>h", "Window left" },
     ["<C-l>"] = { "<C-w>l", "Window right" },
