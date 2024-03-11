@@ -4,11 +4,11 @@ local plugins = {
     opts = {
       ensure_installed = {
         "clangd",
-        "clang-format",
+        "clang-format@17.0.6",
         "codelldb",
         "black@24.1.1",
         "debugpy@1.8.0",
-        "mypy",
+        "mypy@1.7.0",
         "ruff@0.2.0",
         "pyright",
         "lua-language-server",
