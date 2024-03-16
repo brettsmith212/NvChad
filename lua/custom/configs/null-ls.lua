@@ -11,6 +11,8 @@ local opts = {
     null_ls.builtins.formatting.goimports_reviser, -- go install mvdan.cc/gofumpt@latest
     null_ls.builtins.formatting.golines,           -- go install github.com/segmentio/golines@latest
     null_ls.builtins.formatting.stylua,
+    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.formatting.prettier,
   },
   on_attach = function(client, bufnr)
     if client.supports_method "textDocument/formatting" then
