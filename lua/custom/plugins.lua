@@ -19,6 +19,7 @@ local plugins = {
         "typescript-language-server",
         "eslint-lsp",
         "prettier",
+        "jq",
       },
     },
   },
