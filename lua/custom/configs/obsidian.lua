@@ -4,10 +4,10 @@ local options = {
       name = "Personal",
       path = "/Users/brettsmith/Google Drive/My Drive/HomeVault",
     },
-    {
-      name = "Work",
-      path = "/Users/bsmith895/Google Drive/My Drive/Vault",
-    },
+    -- {
+    --   name = "Work",
+    --   path = "/Users/bsmith895/Google Drive/My Drive/Vault",
+    -- },
   },
   ui = {
     enable = true,         -- set to false to disable all additional syntax features
