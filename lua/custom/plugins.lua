@@ -155,6 +155,18 @@ local plugins = {
       require("rust-tools").setup(opts)
     end,
   },
+  {
+    "epwalsh/obsidian.nvim",
+    ft = "markdown",
+    dependencies = "nvim-lua/plenary.nvim",
+    opts = function()
+      return require "custom.configs.obsidian"
+    end,
+    config = function(_, opts)
+      require("obsidian").setup(opts)
+      require("core.utils").load_mappings "obsidian"
+    end,
+  },
   -- {
   --   "jackMort/ChatGPT.nvim",
   --   event = "VeryLazy",

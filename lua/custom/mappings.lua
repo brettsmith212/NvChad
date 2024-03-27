@@ -71,4 +71,12 @@ M.dap_go = {
   },
 }
 
+M.obsidian = {
+  plugin = true,
+  n = {
+    ["<leader>of"] = { "<cmd> ObsidianFollowLink <CR>", "Obsidian Follow Link" },
+    ["<leader>on"] = { "<cmd> ObsidianNew <CR>", "Obsidian New Note" },
+  },
+}
+
 return M
