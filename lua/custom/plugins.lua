@@ -17,7 +17,7 @@ local plugins = {
         "stylua",
         "rust-analyzer",
         "typescript-language-server",
-        "tailwindcss-language-serverj",
+        "tailwindcss-language-server",
         "eslint-lsp",
         "prettierd",
         "jq",
