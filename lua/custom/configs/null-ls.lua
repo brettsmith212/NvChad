@@ -12,7 +12,7 @@ local opts = {
     null_ls.builtins.formatting.golines,           -- go install github.com/segmentio/golines@latest
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.diagnostics.eslint,
-    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.prettierd,
     null_ls.builtins.formatting.jq,
   },
   on_attach = function(client, bufnr)

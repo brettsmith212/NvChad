@@ -17,8 +17,9 @@ local plugins = {
         "stylua",
         "rust-analyzer",
         "typescript-language-server",
+        "tailwindcss-language-serverj",
         "eslint-lsp",
-        "prettier",
+        "prettierd",
         "jq",
         "gofumpt",
         "goimports-reviser",
@@ -168,6 +169,33 @@ local plugins = {
     config = function(_, opts)
       require("obsidian").setup(opts)
       require("core.utils").load_mappings "obsidian"
+    end,
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function()
+      opts = require "plugins.configs.treesitter"
+      opts.ensure_installed = {
+        "lua",
+        "javascript",
+        "typescript",
+        "tsx",
+        "go",
+        "python",
+      }
+      return opts
     end,
   },
   -- {
