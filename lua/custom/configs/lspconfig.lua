@@ -63,9 +63,34 @@ lspconfig.tsserver.setup {
 lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  settings = {
+    tailwindCSS = {
+      experimental = {
+        classRegex = {
+          "@?class\\(([^]*)\\)",
+          "'([^']*)'",
+        },
+      },
+    },
+  },
 }
 
 lspconfig.eslint.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+}
+
+lspconfig.intelephense.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "php", "blade" },
+  settings = {
+    intelephense = {
+      filetypes = { "php", "blade" },
+      files = {
+        associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
+        maxSize = 5000000,
+      },
+    },
+  },
 }

@@ -14,6 +14,8 @@ local opts = {
     null_ls.builtins.diagnostics.eslint,
     null_ls.builtins.formatting.prettierd,
     null_ls.builtins.formatting.jq,
+    null_ls.builtins.formatting.phpcsfixer,
+    null_ls.builtins.diagnostics.phpstan,
   },
   on_attach = function(client, bufnr)
     if client.supports_method "textDocument/formatting" then
