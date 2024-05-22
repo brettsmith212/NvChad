@@ -92,6 +92,25 @@ local plugins = {
         },
       }
 
+      dap.configurations.python = {
+        {
+          name = "Debug w/ executable",
+          type = "debugpy",
+          request = "launch",
+          -- program = '/path/to/task/file',
+          program = function()
+            return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+          end,
+          -- args = { "-l", "flags" },
+          args = function()
+            local args_string = vim.fn.input "Arguments: "
+            return vim.split(args_string, " +")
+          end,
+          cwd = "${workspaceFolder}",
+          stopOnEntry = false,
+        },
+      }
+
       require("core.utils").load_mappings "dap"
     end,
   },
